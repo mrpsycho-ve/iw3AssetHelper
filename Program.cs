@@ -19,6 +19,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         public string colorMap;
         public string normalMap;
+        public string detailMap;
         public string cosinePowerMap;
         public string specColorMap;
     }
@@ -34,19 +35,20 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         public static void Main(string[] args)
         {
-            var configFile = new IniFile("config.ini");
+            /*var configFile = new IniFile("config.ini");
             if (!configFile.KeyExists("TOOLS_PATH"))
             {
                 configFile.Write("TOOLS_PATH", "C:\\");
             }
 
-            string cod4Path = configFile.Read("TOOLS_PATH");
+            string cod4Path = configFile.Read("TOOLS_PATH");*/
 
-            foreach(string asset in args)
+            string buf = null;
+
+            foreach (string asset in args)
             {
                 if (!File.Exists(asset)) return;
                 string ext = Path.GetExtension(asset);
-                string buf;
                 bool bConverter;
 
                 switch (ext)
@@ -58,7 +60,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         }
                     case ".xanim_export":
                         {
-                            handlexAnim(asset);
+                            if (String.IsNullOrEmpty(buf))
+                            {
+                                Console.WriteLine("drag in anim model pussy");
+                                buf = Console.ReadLine();
+                            }
+
+
+                            handlexAnim(asset, buf);
                             break;
                         }
                     case ".gdt":
@@ -95,9 +104,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
                             }
 
                             if(bConverter)
-                                handleGDT(asset, buf, cod4Path);
+                                handleGDT(asset, buf);
                             else
-                                handleLinker(asset, buf, cod4Path);
+                                handleLinker(asset, buf);
 
                             break;
                         }
@@ -146,6 +155,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     foreach (string file in fileArray)
                     {
                         if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_c")) material.colorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_d")) material.detailMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
                         if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_n")) material.normalMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
                         if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_s")) material.specColorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
                         if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_g")) material.cosinePowerMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
@@ -153,6 +163,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                     GameDataTable.Asset asset = new GameDataTable.Asset(strArray[2].Trim('"'), "material");
                     asset["colorMap"] = material.colorMap;
+                    asset["detailMap"] = material.detailMap;
                     asset["cosinePowerMap"] = material.cosinePowerMap;
                     asset["normalMap"] = material.normalMap;
                     asset["specColorMap"] = material.specColorMap;
@@ -171,10 +182,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     File.AppendAllText("convert.bat", "\nconverter -nocachedownload -nopause -single \"xmodel\" " + xModelAsset.Name);
                     gameDataTable["xmodel", xModelAsset.Name] = xModelAsset;
                 }
-                gameDataTable.Save("gdt.gdt");
+
+                gameDataTable.Save(Path.GetFileNameWithoutExtension(xModel) + ".gdt");
             }
         }
-        public static void handlexAnim(string xAnim)
+        public static void handlexAnim(string xAnim, string animModel)
         {
             GameDataTable gameDataTable = new GameDataTable();
 
@@ -183,9 +195,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             GameDataTable.Asset xAnimAsset = new GameDataTable.Asset(Path.GetFileNameWithoutExtension(xAnim), "xanim");
             xAnimAsset["filename"] = xAnim.Substring(xAnim.IndexOf("export\\") + 7).Replace("\\", "\\\\");
-            xAnimAsset["model"] = "pepe.xmodel_export";
-            if(xAnim.Contains("idle") || xAnim.Contains("loop"))
+            xAnimAsset["model"] = animModel.Substring(xAnim.IndexOf("export\\") + 7).Replace("\\", "\\\\");
+
+            if (xAnim.Contains("idle") || xAnim.Contains("loop"))
                 xAnimAsset["looping"] = "1";
+
             xAnimAsset["type"] = "relative";
             xAnimAsset["angleError"] = "0.0001";
             xAnimAsset["useBones"] = "0";
@@ -196,15 +210,15 @@ namespace MyApp // Note: actual namespace depends on the project name.
             gameDataTable.Save("gdt.gdt");
         }
 
-        public static void handleGDT(string gdt, string type, string gamePath)
+        public static void handleGDT(string gdt, string type)
         {
             Console.WriteLine("starting " + type + " asset conversion of GDT " + Path.GetFileNameWithoutExtension(gdt));
             GameDataTable gameDataTable = new GameDataTable(gdt);
             string buffer;
-            string[] bufferArray = gamePath.Split("\\");
+            /*string[] bufferArray = gamePath.Split("\\");
 
             File.WriteAllText("convert.bat", bufferArray[0] + "\n");
-            File.AppendAllText("convert.bat", "cd " + gamePath + "\\bin");
+            File.AppendAllText("convert.bat", "cd " + gamePath + "\\bin");*/
 
             foreach (KeyValuePair<string, Dictionary<string, Asset>> asset in gameDataTable.Assets)
             {
@@ -215,12 +229,12 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 }
             }
         }
-        public static void handleLinker(string gdt, string type, string gamePath)
+        public static void handleLinker(string gdt, string type)
         {
             Console.WriteLine("starting " + type + " asset list building of GDT " + Path.GetFileNameWithoutExtension(gdt));
             GameDataTable gameDataTable = new GameDataTable(gdt);
             string buffer;
-            string[] bufferArray = gamePath.Split("\\");
+            /*string[] bufferArray = gamePath.Split("\\");*/
 
             File.WriteAllText("assetlist.csv", "//" + Path.GetFileNameWithoutExtension(gdt) + " assetlist" + "\n");
 

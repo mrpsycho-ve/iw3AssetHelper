@@ -12,3 +12,4 @@ C:\Users\user\source\repos\iw3AssetHelper\obj\Debug\net7.0\refint\iw3AssetHelper
 C:\Users\user\source\repos\iw3AssetHelper\obj\Debug\net7.0\iw3AssetHelper.pdb
 C:\Users\user\source\repos\iw3AssetHelper\obj\Debug\net7.0\iw3AssetHelper.genruntimeconfig.cache
 C:\Users\user\source\repos\iw3AssetHelper\obj\Debug\net7.0\ref\iw3AssetHelper.dll
+C:\Users\user\source\repos\iw3AssetHelper\obj\Debug\net7.0\iw3AssetHelper.sourcelink.json
