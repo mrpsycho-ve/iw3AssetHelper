@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ezshitpls": {
+      "commandName": "Project",
+      "commandLineArgs": "F:\\Games\\COD4\\model_export\\iw9\\mike2011\\vm_p55_pi_mike2011.xmodel_export",
+      "workingDirectory": "C:\\Users\\user\\source\\repos\\iw3AssetHelper\\bin\\Debug\\net7.0"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+	"wpn_p55_pi_mike2011_frame_v1" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_frame_v1\\vm_mike2011_frame_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_frame_v1\\vm_mike2011_frame_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_frame_v1\\vm_mike2011_frame_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_frame_v1\\vm_mike2011_frame_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"xmaterial_6181d70a9b605" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\xmaterial_6181d70a9b605\\vm_mike2011_comp02_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\xmaterial_6181d70a9b605\\vm_mike2011_comp02_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\xmaterial_6181d70a9b605\\vm_mike2011_comp02_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\xmaterial_6181d70a9b605\\vm_mike2011_comp02_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"wpn_p55_pi_mike2011_barhvy_v1" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_barhvy_v1\\vm_mike2011_barhvy_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_barhvy_v1\\vm_mike2011_barhvy_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_barhvy_v1\\vm_mike2011_barhvy_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_barhvy_v1\\vm_mike2011_barhvy_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"wpn_p55_pi_mike2011_triglgt_v1" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_triglgt_v1\\vm_mike2011_trigger_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_triglgt_v1\\vm_mike2011_trigger_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_triglgt_v1\\vm_mike2011_trigger_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_triglgt_v1\\vm_mike2011_trigger_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"wpn_p55_pi_mike2011_grip_v1" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_grip_v1\\vm_mike2011_grip_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_grip_v1\\vm_mike2011_grip_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_grip_v1\\vm_mike2011_grip_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_grip_v1\\vm_mike2011_grip_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"wpn_p55_pi_mike2011_xmag_v1" ( "material.gdf" )
+	{
+		"colorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_xmag_v1\\vm_mike2011_xmag_c.tga"
+		"cosinePowerMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_xmag_v1\\vm_mike2011_xmag_g.tga"
+		"normalMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_xmag_v1\\vm_mike2011_xmag_n.tga"
+		"specColorMap" "model_export\\iw9\\mike2011\\_images\\wpn_p55_pi_mike2011_xmag_v1\\vm_mike2011_xmag_s.tga"
+		"template" "material.template"
+		"materialType" "model phong"
+		"surfaceType" "<none>"
+	}
+	"vm_p55_pi_mike2011" ( "xmodel.gdf" )
+	{
+		"filename" "iw9\\mike2011\\vm_p55_pi_mike2011.xmodel_export"
+		"type" "animated"
+	}
+}
