@@ -195,7 +195,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             GameDataTable.Asset xAnimAsset = new GameDataTable.Asset(Path.GetFileNameWithoutExtension(xAnim), "xanim");
             xAnimAsset["filename"] = xAnim.Substring(xAnim.IndexOf("export\\") + 7).Replace("\\", "\\\\");
-            xAnimAsset["model"] = animModel.Substring(xAnim.IndexOf("export\\") + 7).Replace("\\", "\\\\");
+            xAnimAsset["model"] = animModel.Replace("\"", "").Substring(xAnim.IndexOf("export\\") + 7).Replace("\\", "\\\\");
 
             if (xAnim.Contains("idle") || xAnim.Contains("loop"))
                 xAnimAsset["looping"] = "1";
