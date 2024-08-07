@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("iw3AssetHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cb70c1f85c46aa9f82496df4cfb62633217b261")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("iw3AssetHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("iw3AssetHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

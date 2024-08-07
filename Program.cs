@@ -62,7 +62,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         {
                             if (String.IsNullOrEmpty(buf))
                             {
-                                Console.WriteLine("drag in anim model pussy");
+                                Console.WriteLine("drag in animated model");
                                 buf = Console.ReadLine();
                             }
 
