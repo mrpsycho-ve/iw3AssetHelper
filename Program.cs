@@ -154,11 +154,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                     foreach (string file in fileArray)
                     {
-                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_c")) material.colorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
-                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_d")) material.detailMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
-                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_n")) material.normalMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
-                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_s")) material.specColorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
-                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_g")) material.cosinePowerMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_c") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_color") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_col")) material.colorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_d") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_detail")) material.detailMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_n") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_normal") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_nml")) material.normalMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_s") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_specular") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_spec")) material.specColorMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
+                        if (System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_g") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_cosine") || System.IO.Path.GetFileNameWithoutExtension(file).EndsWith("_gloss")) material.cosinePowerMap = file.Substring(file.IndexOf("\\model_export") + 1).Replace("\\", "\\\\");
                     }
 
                     GameDataTable.Asset asset = new GameDataTable.Asset(strArray[2].Trim('"'), "material");
@@ -177,7 +177,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                     GameDataTable.Asset xModelAsset = new GameDataTable.Asset(Path.GetFileNameWithoutExtension(xModel), "xmodel");
                     xModelAsset["filename"] = xModel.Substring(xModel.IndexOf("export\\") + 7).Replace("\\", "\\\\");
-                    xModelAsset["type"] = Path.GetFileNameWithoutExtension(xModel).StartsWith("vm_") ? "animated" : "rigid";
+                    xModelAsset["type"] = (Path.GetFileNameWithoutExtension(xModel).StartsWith("vm_") || Path.GetFileNameWithoutExtension(xModel).StartsWith("viewmodel_")) ? "animated" : "rigid";
 
                     File.AppendAllText("convert.bat", "\nconverter -nocachedownload -nopause -single \"xmodel\" " + xModelAsset.Name);
                     gameDataTable["xmodel", xModelAsset.Name] = xModelAsset;

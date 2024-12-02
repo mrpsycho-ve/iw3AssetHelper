@@ -1,0 +1,15 @@
+C:\Users\Administrator\Downloads\iw3AssetHelper\bin\Release\net7.0\iw3AssetHelper.exe
+C:\Users\Administrator\Downloads\iw3AssetHelper\bin\Release\net7.0\iw3AssetHelper.deps.json
+C:\Users\Administrator\Downloads\iw3AssetHelper\bin\Release\net7.0\iw3AssetHelper.runtimeconfig.json
+C:\Users\Administrator\Downloads\iw3AssetHelper\bin\Release\net7.0\iw3AssetHelper.dll
+C:\Users\Administrator\Downloads\iw3AssetHelper\bin\Release\net7.0\iw3AssetHelper.pdb
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.dll
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\refint\iw3AssetHelper.dll
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.pdb
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\iw3AssetHelper.genruntimeconfig.cache
+C:\Users\Administrator\Downloads\iw3AssetHelper\obj\Release\net7.0\ref\iw3AssetHelper.dll
