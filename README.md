@@ -15,7 +15,7 @@ iw3AssetHelper will work with a `images` or `_images` folder, your images will n
 
 <h3 align="left">Steps:</h3>
 
-1. Download lastest from Releases
+1. Download lastest from [Releases](https://github.com/mrpsycho-ve/iw3AssetHelper/releases)
 
 2. Make a folder in your cod4 mod tools called "autoGDT"
 
