@@ -1,12 +1,13 @@
 # iw3AssetHelper
 
+iw3AssetHelper is a tool that automatically adds Materials, XModels and XAnims in to one GDT!
+
 Created By MrPsycho
 
 
-#Note
+# Note
 
-For iw3AssetHelper to work you'll have to have things named a certain way, your images folder will need to be name "_images" and every image will need the first letter of that image type is e.g colour: imagename_c, imagename_s, imagename_g, imagename_n. 
-This is the same for your xmodels, you'll need to name the vm/wm at the start of the file name e.g vm_wpm_xmodel. Anims should be fine with anyname as long as the file name isnt too long.
+iw3AssetHelper will work with a `images` or `_images` folder, your images will need to end with the full, sort or letter of the name of the image type e.g (`_color`, `_col`, `_c`).
 
 # Steps
 
