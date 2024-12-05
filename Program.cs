@@ -183,7 +183,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     gameDataTable["xmodel", xModelAsset.Name] = xModelAsset;
                 }
 
-                gameDataTable.Save(Path.GetFileNameWithoutExtension(xModel) + ".gdt");
+                gameDataTable.Save("gdt.gdt");
             }
         }
         public static void handlexAnim(string xAnim, string animModel)

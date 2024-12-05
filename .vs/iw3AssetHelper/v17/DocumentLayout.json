@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{DFCF7685-04AE-4DC6-B45C-BC8F71C36CE0}|iw3AssetHelper.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DFCF7685-04AE-4DC6-B45C-BC8F71C36CE0}|iw3AssetHelper.csproj|c:\\users\\user\\source\\repos\\iw3assethelper\\gamedatatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFCF7685-04AE-4DC6-B45C-BC8F71C36CE0}|iw3AssetHelper.csproj|solutionrelative:gamedatatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DFCF7685-04AE-4DC6-B45C-BC8F71C36CE0}|iw3AssetHelper.csproj|c:\\users\\user\\source\\repos\\iw3assethelper\\iw3assethelper.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{DFCF7685-04AE-4DC6-B45C-BC8F71C36CE0}|iw3AssetHelper.csproj|solutionrelative:iw3assethelper.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameDataTable.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\iw3AssetHelper\\GameDataTable.cs",
+              "RelativeDocumentMoniker": "GameDataTable.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\iw3AssetHelper\\GameDataTable.cs",
+              "RelativeToolTip": "GameDataTable.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:06:24.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "iw3AssetHelper",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\iw3AssetHelper\\iw3AssetHelper.csproj",
               "RelativeDocumentMoniker": "iw3AssetHelper.csproj",
@@ -39,7 +56,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\iw3AssetHelper\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAALEAAAAAAAAAAAAowMUAAAB8AAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAIwJUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-03T20:34:39.787Z",
               "EditorCaption": ""
