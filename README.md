@@ -35,4 +35,11 @@ iw3AssetHelper will work with a `images` or `_images` folder, your images will n
 
 <h3 align="center">Discord:</h3>
   <p align="center">
-    mrpsychov2 | SadSlothXL
+    <br />
+    <a =>mrpsychov2</a>
+    |
+    <a =>SadSlothXL</a>
+    |
+    <a href=https://discord.gg/v2TWkeR >ManyAsset</a>
+  </p>
+</div>
