@@ -23,7 +23,7 @@ iw3AssetHelper will work with a `images` or `_images` folder, your images will n
 
 4. Have both your model_export folder with your files in open (files can be in subfolders) and the autoGDT folder
 
-5. Select both your vm and wm xmodels and drag them into the iw3AssetHelper.exe, it will create a .GDT file named the name of the vm, rename it to what you want e.g t6_m27 and move it to your source_data folder
+5. Select both your vm and wm xmodels and drag them into the iw3AssetHelper.exe, it will create a .GDT file, rename it to what you want e.g t6_m27 and move it to your source_data folder
 
 6. Have both your xanim_export folder with your files in open (files can be in subfolders) and the autoGDT folder
 
