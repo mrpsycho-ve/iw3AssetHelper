@@ -37,7 +37,7 @@
 └── ...
 ```
 
-iw3AssetHelper will work with a `images` or `_images` folder, your images will need to end with the full, sort or letter of the name of the image type e.g (`_color`, `_col`, `_c`).
+iw3AssetHelper will work with a `images` or `_images` folder, your images will need to end with the full, short or letter of the name of the image type e.g (`_color`, `_col`, `_c`).
 
 # 
 
