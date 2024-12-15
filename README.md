@@ -12,7 +12,7 @@
 .NET 7.0 but I recommend .NET 9.0 [Download](https://download.visualstudio.microsoft.com/download/pr/685792b6-4827-4dca-a971-bce5d7905170/1bf61b02151bc56e763dc711e45f0e1e/windowsdesktop-runtime-9.0.0-win-x64.exe)
  
 # 
-<h3 align="left">Note/foler structure:</h3>
+<h3 align="left">Note/folder structure:</h3>
 
 ```
 .
