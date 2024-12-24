@@ -9,7 +9,7 @@
 # 
 <h3 align="left">Required:</h3>
 
-.NET 7.0 but I recommend .NET 9.0 [Download](https://download.visualstudio.microsoft.com/download/pr/be7eaed0-4e32-472b-b53e-b08ac3433a22/fc99a5977c57cbfb93b4afb401953818/dotnet-runtime-7.0.20-win-x64.exe)
+.NET 7.0 [Download](https://download.visualstudio.microsoft.com/download/pr/be7eaed0-4e32-472b-b53e-b08ac3433a22/fc99a5977c57cbfb93b4afb401953818/dotnet-runtime-7.0.20-win-x64.exe)
  
 # 
 <h3 align="left">Note/folder structure:</h3>
